@@ -5,7 +5,7 @@ import sys
 def ellipse_position(centre, radius, x, y):
     centre_x = centre[0]
     centre_y = centre[1]
-    a = radius[0]   # Из условия задачи не совсем понятно, что именно из себя представляют «координаты радиуса».
+    a = radius[0]   # Из условия задачи не совсем ясно, что именно из себя представляют «координаты радиуса».
     b = radius[1]   # По этой причине данные значения были использованы как длины полуосей.
     x = abs(x - centre_x)
     y = abs(y - centre_y)
@@ -38,3 +38,4 @@ with open(file2_path, 'r') as file:
 
 for point in points:
     print(ellipse_position(ellipse_par[0], ellipse_par[1], point[0], point[1]), end='\n')
+
